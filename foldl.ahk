@@ -6,7 +6,7 @@
  */
 
 foldl(enumerable, f, z?){
-    realF := f ;avoiding a branch with a stateful assignment
+    realF := f ;avoiding a loop-internal branch with a stateful assignment
     if !(IsSet(z)){
         f := (acc?, x?) => x
     }
