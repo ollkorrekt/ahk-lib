@@ -15,7 +15,10 @@ foldl(enumerable, f, z?){
         f := realF ;for all subsequent loops, this is the real value for f
     }
     if !(IsSet(z)){
-        throw ValueError("An initial accumulator value must be provided to fold an empty enumerable.", -1)
+        throw ValueError(
+            "An initial accumulator value must be provided to fold an empty enumerable.",
+            -1
+        )
     }
     return z
 }
