@@ -6,5 +6,5 @@
 
 Array.Prototype.insertGap := array_insertGap
 
-array_insertGap(arr, item, length?, compare?)
-    => arr.InsertAt(arr.binarySearchGap(item, length?, compare?), item)
+array_insertGap(arr, item, start?, end?, compare?)
+    => arr.InsertAt(arr.binarySearchGap(item, start?, end?, compare?), item)

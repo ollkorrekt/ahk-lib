@@ -6,7 +6,7 @@
  */
 Array.Prototype.insertAtGap := array_insertAtGap
 
-array_insertAtGap(arr, i, item, length?, compare?){ 
+array_insertAtGap(arr, i, item){ 
     while (i <= arr.Length and arr.Has(i)){
         temp := arr[i]
         arr[i] := item

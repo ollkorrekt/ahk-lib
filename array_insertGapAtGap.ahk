@@ -8,5 +8,5 @@
 
 Array.Prototype.insertGapAtGap := array_insertGapAtGap
 
-array_insertGapAtGap(arr, item, length?, compare?)
-    => arr.insertAtGap(arr.binarySearchGap(item, length?, compare?), item)
+array_insertGapAtGap(arr, item, start?, end?, compare?)
+    => arr.insertAtGap(arr.binarySearchGap(item, start?, end?, compare?), item)
