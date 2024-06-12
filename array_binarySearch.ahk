@@ -31,7 +31,7 @@ array_binarySearch(
     while lowerBound < upperBound {
         ;look at the midpoint, favoring the left side when neccessary
         bound := (lowerBound + upperBound) // 2
-        ;treat = the same as > so that will be stable when used for insertion.
+        ;treat = the same as > so this will be stable when used for insertion.
         if compare(item, arr[bound]) >= 0 {
             ;item can't be at bound, it has to be to the right of it.
             lowerBound := bound + 1
