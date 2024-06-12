@@ -3,7 +3,8 @@
  * and returns the location in the array at which item would be inserted.
  * However, unlike that method, this one allows items in the array to be unset,
  * and will return the first unset index if there is one available in the
- * correct position. Arrays with many unset indicies may be searched slowly.
+ * correct position. Arrays with many adjacent unset indicies may be searched
+ * slowly.
  * Returns the index i where arr[i] <= item < the first set item with an index
  * higher than i, or returns length + 1 if arr[length]  < item, or returns 1
  * otherwise (that is, if the array contains no set elements, if length = 0, or
@@ -15,8 +16,9 @@
  * instead of a default numeric comparison; compare  should return a positive
  * number if its first parameter is greater than its second, a negative number
  * if its second parameter is greater than its first, or zero if its parameters
- * are equal. If the input array is not sorted, the return value is not defined,
- * but it will be an integer between 1 and length + 1.
+ * are equal. If the input array (up to index length and ignoring unset indices)
+ * is not sorted, the return value is not defined, but it will be an integer
+ * between 1 and length + 1.
  */
 Array.Prototype.binarySearchGap := array_binarySearchGap
 

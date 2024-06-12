@@ -2,7 +2,8 @@
 /* This method assumes the array is sorted, and finds and returns the first
  * index i where arr[i] <= item < arr[i+1], or returns length + 1 if arr[length]
  * < item, or returns 1 otherwise (that is, if the array is empty, if length =
- * 0, or if arr[1] > item).
+ * 0, or if arr[1] > item). This function does not support arrays with unset
+ * elements; see binarySearchGap for those.
  * Optionally, specify a length, an index beyond which items will not be
  * checked. The default length is the length of the array, so that all items
  * will be checked.
@@ -10,8 +11,8 @@
  * instead of a default numeric comparison; compare  should return a positive
  * number if its first parameter is greater than its second, a negative number
  * if its second parameter is greater than its first, or zero if its parameters
- * are equal. If the input array is not sorted, the return value is not defined,
- * but it will be an integer between 1 and length + 1.
+ * are equal. If the input array (up to index length) is not sorted, the return
+ * value is not defined, but it will be an integer between 1 and length + 1.
  */
 
 Array.Prototype.binarySearch := array_binarySearch
