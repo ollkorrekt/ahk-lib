@@ -14,9 +14,6 @@
  * are equal.
  */
 #Include <array_swap>
-#Include <array_ToString>
-
-#include <array_insertionSort>
 
 Array.Prototype.quicksort := array_quicksort
 

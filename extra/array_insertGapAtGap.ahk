@@ -3,8 +3,8 @@
  * overwriting the first unset element after the inserted item rather than
  * shifting it over.
  */
-#Include <array_insertAtGap>
-#Include <array_binarySearchGap>
+#Include <extra\array_insertAtGap>
+#Include <extra\array_binarySearchGap>
 
 Array.Prototype.insertGapAtGap := array_insertGapAtGap
 

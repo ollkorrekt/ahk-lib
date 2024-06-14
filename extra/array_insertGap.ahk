@@ -2,7 +2,7 @@
 /* like array_insert, but supports insertion into arrays that contain unset
  * values. The array should still be sorted apart from any unset indices.
  */
-#Include <array_binarySearchGap>
+#Include <extra\array_binarySearchGap>
 
 Array.Prototype.insertGap := array_insertGap
 
