@@ -18,9 +18,9 @@ array_insertionSort(arr, start := 1, end := arr.Length, compare?){
     if (start > end){
         throw ValueError("start must be <= end.")
     }
-    loop (end - start + 1){
-        i := start + A_Index
-        arr.RemoveAt(i)
-        arr.insert(arr[i], start, i-1, compare?)
+    loop (end - start){ ;leaving out first, because length one list is sorted
+        i := start + A_Index ;from index start + 1 to end
+        item := arr.RemoveAt(i)
+        arr.insert(item, start, i-1, compare?)
     }
 }
